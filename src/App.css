@@ -110,6 +110,33 @@ form h1 {
   text-align: center;
 }
 
+.feed-link {
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.537);
+  border-radius: 1.5rem;
+  padding: 8px 8px;
+}
+.feed-link:hover {
+  color: #fff;
+  background-color: rgba(106, 89, 187, 0.888);
+}
+
+.write-link {
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 10px 10px;
+  background-color: rgba(106, 89, 187, 0.888);
+}
+
+.logout-link {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.logout-link:hover {
+  color: red;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   div.post {
