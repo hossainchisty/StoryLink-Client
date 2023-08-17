@@ -103,9 +103,10 @@ button {
   color: #fff;
   border-radius: 5px;
   padding: 7px 0;
+  cursor: pointer;
 }
 
-form h1 {
+form.login h1 form.register h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
