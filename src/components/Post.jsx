@@ -1,28 +1,32 @@
+/* eslint-disable react/prop-types */
 
+import { format } from "date-fns";
+import { Link } from "react-router-dom";
 
-export default function Post() {
+export default function Post({_id, title, content, cover, createdAt, author}) {
   return (
     <div className="post">
         <div className="image">
+          <Link to={`post/${_id}`}>
+          
           <img
-            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1690175267986/da3e5ed2-6240-41b5-8a53-dcf1ac2bc541.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
-            alt=""
+            src={`http://localhost:8000/${cover}`}
+            alt={title}
           />
+          </Link>
         </div>
         <div className="texts">
+        <Link to={`post/${_id}`}>
           <h2>
-            Essential Concepts for
-            DevOps Engineers
+            {title}
           </h2>
+          </Link>
           <p className="info">
-            <a href="" className="author">Hossain Chisty</a>
-            <time>15-Aug-2023</time>
+            <a href="" className="author">{author.full_name}</a>
+            <time>{format(new Date(createdAt), 'MMM d, YYY HH:mm')}</time>
           </p>
           <p className="summary">
-            Docker is a tool designed to make it easier to create, deploy, and
-            run applications by using containers. It allows you to attach a
-            container to as many networks as you like, you can also attach an
-            already-running container.
+            {content}
           </p>
         </div>
       </div>
