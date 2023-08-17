@@ -2,6 +2,7 @@ import "./App.css";
 import Layout from "./components/Layout";
 import { Routes, Route } from "react-router-dom";
 import IndexPage from "./pages/IndexPage";
+import PostPage from "./pages/PostPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import { UserContextProvider } from "./context/UserContext";
@@ -24,6 +25,9 @@ function App() {
         } />
         <Route path={'/draft'} element={
           <CreatePostPage/>
+        } />
+        <Route path={'/post/:id'} element={
+          <PostPage/>
         } />
       </Route>
     </Routes>
