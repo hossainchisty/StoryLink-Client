@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.2.1...v0.3.0) (2023-08-16)
+
+
+### Features
+
+* Use context to share data between components ([7d6ab0a](https://github.com/hossainchisty/StoryLink-Client/commit/7d6ab0ac652c5c01ead2eb3503ac16548af72c0e))
+
+
+
 ## [0.2.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.2.0...v0.2.1) (2023-08-16)
 
 
