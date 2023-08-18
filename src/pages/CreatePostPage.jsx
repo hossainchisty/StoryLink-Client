@@ -1,4 +1,3 @@
-import 'react-quill/dist/quill.snow.css';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Editor from "../components/Editor";
@@ -10,7 +9,7 @@ export default function CreatePostPage() {
   const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
-  async function createPost(event) {
+  async function handleCreatePost(event) {
     event.preventDefault();
     const data = new FormData();
     data.set('title', title);
@@ -30,7 +29,7 @@ export default function CreatePostPage() {
     return <Navigate to={'/'} />
   }
   return (
-    <form onSubmit={createPost}>
+    <form onSubmit={handleCreatePost}>
       <input type="text"
         placeholder={'Write your article...'}
         onChange={event => setTitle(event.target.value)} />
@@ -39,7 +38,7 @@ export default function CreatePostPage() {
         name="image"
         onChange={event => setFiles(event.target.files)}
       />
-       <Editor value={content} onChange={setContent} />
+      <Editor value={content} onChange={setContent} />
       <button style={{ marginTop: '8px' }}>Publish Now</button>
 
     </form>
