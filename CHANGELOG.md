@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.4.0...v0.4.1) (2023-08-18)
+
+
+### Bug Fixes
+
+* Format of content ([0a89f88](https://github.com/hossainchisty/StoryLink-Client/commit/0a89f88c9bfe1122ee67f149636b7c799eb1db43))
+
+
+
 # [0.4.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.3.0...v0.4.0) (2023-08-17)
 
 
