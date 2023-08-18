@@ -1,3 +1,17 @@
+# [0.5.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.4.1...v0.5.0) (2023-08-18)
+
+
+### Features
+
+* Added new route for edit post ([6615160](https://github.com/hossainchisty/StoryLink-Client/commit/66151601866bf22d289561a39197dc2571e73c28))
+
+
+### Performance Improvements
+
+* Seperate editor for readability and performance issues ([3d6ddad](https://github.com/hossainchisty/StoryLink-Client/commit/3d6ddadffb88b2472d65972572a7aef1dae18fb8))
+
+
+
 ## [0.4.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.4.0...v0.4.1) (2023-08-18)
 
 
@@ -37,15 +51,6 @@
 ### Bug Fixes
 
 * Resolve typo ([cf8a934](https://github.com/hossainchisty/StoryLink-Client/commit/cf8a9344bd35ebd7d462e9e1ed1286f022347558))
-
-
-
-# [0.2.0](https://github.com/hossainchisty/StoryLink-Client/compare/46cd6567ef29f667639996100c11d7792ed206a5...v0.2.0) (2023-08-16)
-
-
-### Features
-
-* intial release ([46cd656](https://github.com/hossainchisty/StoryLink-Client/commit/46cd6567ef29f667639996100c11d7792ed206a5))
 
 
 
