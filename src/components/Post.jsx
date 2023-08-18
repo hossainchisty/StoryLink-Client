@@ -25,8 +25,9 @@ export default function Post({_id, title, content, cover, createdAt, author}) {
             <a href="" className="author">{author.full_name}</a>
             <time>{format(new Date(createdAt), 'MMM d, YYY HH:mm')}</time>
           </p>
-          <p className="summary">
-            {content}
+          <p 
+            className="summary" 
+            dangerouslySetInnerHTML={{ __html: content }} >
           </p>
         </div>
       </div>
