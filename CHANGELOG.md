@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.0...v0.6.1) (2023-08-18)
+
+
+### Bug Fixes
+
+* remove prefix of main domain ([ff14a7e](https://github.com/hossainchisty/StoryLink-Client/commit/ff14a7effd680f8c3a20a3dccef93b1dfe6c57d3))
+
+
+
 # [0.6.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.5.0...v0.6.0) (2023-08-18)
 
 
@@ -43,15 +52,6 @@
 * Made this post component dynamic and responsive ([9c06793](https://github.com/hossainchisty/StoryLink-Client/commit/9c067939a6ecd76acdfdab68537621b14bc27987))
 * mount new route ([894f863](https://github.com/hossainchisty/StoryLink-Client/commit/894f86313d3cc51009fad78d9256a1647cf9a715))
 * Use usercontext for user info ([a9756af](https://github.com/hossainchisty/StoryLink-Client/commit/a9756af9dd9c6853c530063abc645a2c5864f942))
-
-
-
-# [0.3.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.2.1...v0.3.0) (2023-08-16)
-
-
-### Features
-
-* Use context to share data between components ([7d6ab0a](https://github.com/hossainchisty/StoryLink-Client/commit/7d6ab0ac652c5c01ead2eb3503ac16548af72c0e))
 
 
 
