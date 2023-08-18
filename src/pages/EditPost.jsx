@@ -31,7 +31,7 @@ export default function EditPost() {
     if (files?.[0]) {
       data.set("image", files?.[0]);
     }
-    await fetch(`${apiBaseUrl}/api/v1/posts/`, {
+    await fetch(`${apiBaseUrl}/posts/`, {
       method: "PUT",
       body: data,
       credentials: "include",
