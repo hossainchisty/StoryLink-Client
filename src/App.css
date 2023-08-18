@@ -86,9 +86,19 @@ div.post div.texts a {
 }
 
 div.post p.summary {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 6px 0;
-  line-height: 1.3rem;
+  margin: 10px 0;
+  line-height: 1.8rem;
+}
+
+div.post p.summary .read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #7d52bd;
+  text-decoration: none;
+}
+
+div.post p.summary .read-more:hover {
+  text-decoration: underline;
 }
 
 form.login,
