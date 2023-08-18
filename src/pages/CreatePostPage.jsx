@@ -1,13 +1,13 @@
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import Editor from "../components/Editor";
 
 
 export default function CreatePostPage() {
-  const [title, setTitle] = useState('title');
-  const [content, setContent] = useState('content');
-  const [files, setFiles] = useState('files');
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
   async function createPost(event) {
@@ -39,7 +39,7 @@ export default function CreatePostPage() {
         name="image"
         onChange={event => setFiles(event.target.files)}
       />
-      <ReactQuill onChange={newValue => setContent(newValue)} />
+       <Editor value={content} onChange={setContent} />
       <button style={{ marginTop: '8px' }}>Publish Now</button>
 
     </form>
