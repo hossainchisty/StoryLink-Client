@@ -18,11 +18,13 @@ export default function Post({
   const summaryWords = words.slice(0, maxWordsInSummary);
   const summary = summaryWords.join(" ");
   const shouldShowEllipsis = words.length > maxWordsInSummary;
+  const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
+
   return (
     <div className="post">
       <div className="image">
         <Link to={`post/${_id}`}>
-          <img src={`http://localhost:8000/${cover}`} alt={title} />
+          <img src={`${apiBaseDomain}/${cover}`} alt={title} />
         </Link>
       </div>
       <div className="texts">

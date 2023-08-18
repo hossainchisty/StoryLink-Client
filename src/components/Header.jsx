@@ -1,12 +1,14 @@
+/* eslint-disable no-undef */
 import { Link } from 'react-router-dom'
 import { useEffect, useContext } from 'react';
 import { UserContext } from '../context/UserContext';
 
-
 export default function Header() {
   const { setUserInfo, userInfo } = useContext(UserContext);
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/users/me', {
+    fetch(`${apiBaseUrl}/users/me`, {
       credentials: 'include',
     }).then(response => {
       response.json().then(userData => {

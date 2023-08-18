@@ -8,6 +8,8 @@ export default function CreatePostPage() {
   const [content, setContent] = useState('');
   const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
 
   async function handleCreatePost(event) {
     event.preventDefault();
@@ -15,7 +17,7 @@ export default function CreatePostPage() {
     data.set('title', title);
     data.set('content', content);
     data.set('image', files[0]);
-    const response = await fetch('http://localhost:8000/api/v1/posts', {
+    const response = await fetch(`${apiBaseUrl}/posts`, {
       method: 'POST',
       body: data,
       credentials: 'include',

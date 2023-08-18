@@ -7,6 +7,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [redirect, setRedirect] = useState(false);
   const {setUserInfo} = useContext(UserContext);
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   async function login(event) {
     event.preventDefault();
@@ -14,7 +15,7 @@ export default function LoginPage() {
       email: email,
       password: password
     }
-    const response = await fetch('http://localhost:8000/api/v1/users/login', {
+    const response = await fetch(`${apiBaseUrl}/users/login`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: { 'Content-Type': 'application/json' },

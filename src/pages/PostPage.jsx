@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState, useContext } from "react"
 import { useParams, Link } from "react-router-dom";
 
@@ -8,8 +9,11 @@ export default function PostPage() {
     const [postInfo, setPostInfo] = useState(null);
     const {userInfo} = useContext(UserContext);
     const { id } = useParams();
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+    const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
+
     useEffect(() => {
-        fetch(`http://localhost:8000/api/v1/posts/${id}`)
+        fetch(`${apiBaseUrl}/posts/${id}`)
             .then(response => {
                 response.json().then(postInfo => {
                     setPostInfo(postInfo);
@@ -23,7 +27,7 @@ export default function PostPage() {
         <div className="post-page">
             <h1>{postInfo.data.title}</h1>
             <div className="image">
-                <img src={`http://localhost:8000/${postInfo.data.cover}`} alt={postInfo.data.title} />
+                <img src={`${apiBaseDomain}/${postInfo.data.cover}`} alt={postInfo.data.title} />
             </div>
             <time>{formatISO9075(new Date(postInfo.data.createdAt))}</time>
             <div className="author">by @{postInfo.data.author.full_name}</div>

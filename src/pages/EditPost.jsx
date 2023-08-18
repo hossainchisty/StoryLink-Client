@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Editor from "../components/Editor";
@@ -8,9 +9,11 @@ export default function EditPost() {
   const [content, setContent] = useState("");
   const [files, setFiles] = useState("");
   const [redirect, setRedirect] = useState(false);
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/v1/posts/${id}`).then((response) => {
+    fetch(`${apiBaseUrl}/posts/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setTitle(postInfo.data.title);
         setContent(postInfo.data.content);
