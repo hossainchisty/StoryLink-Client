@@ -8,6 +8,8 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import { UserContextProvider } from "./context/UserContext";
 import CreatePostPage from "./pages/CreatePostPage";
+import Explore from "./components/Explore";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -18,6 +20,13 @@ function App() {
           <IndexPage />
         } />
 
+        <Route path={'/me'} element={
+          <Profile />
+        } /> 
+        
+        <Route path={'/explore'} element={
+          <Explore />
+        } />
         <Route path={'/login'} element={
           <LoginPage />
         } />
