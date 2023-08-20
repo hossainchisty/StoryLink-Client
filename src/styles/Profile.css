@@ -1,0 +1,81 @@
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.profile-content {
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.profile-avatar {
+  float: left;
+  margin-right: 20px;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-bio {
+  overflow: hidden;
+}
+
+.profile-bio h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-bio p {
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.81);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.edit-profile-button {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.edit-profile-button button {
+  background-color: rgba(106, 89, 187, 0.888);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-listing {
+  margin-top: 20px;
+}
+
+.post-listing h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.post-item {
+  flex: 1;
+  max-width: calc(33.33% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
