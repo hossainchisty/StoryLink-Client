@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('');
@@ -23,7 +24,7 @@ export default function RegisterPage() {
     });
 
     if (response.status === 201) {
-      alert('Registration successful');
+      return <Navigate to={'/login'} />
     } else if (response.status === 429) {
       alert('Too Many Requests, please try again later');
     }
