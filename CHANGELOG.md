@@ -1,3 +1,12 @@
+## [0.6.3](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.2...v0.6.3) (2023-08-20)
+
+
+### Bug Fixes
+
+* while registering use will navigate to login page ([e50acb1](https://github.com/hossainchisty/StoryLink-Client/commit/e50acb15ac9109631b1a5cdcbc0381acee2cc359))
+
+
+
 ## [0.6.2](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.1...v0.6.2) (2023-08-20)
 
 
@@ -37,15 +46,6 @@
 ### Performance Improvements
 
 * Seperate editor for readability and performance issues ([3d6ddad](https://github.com/hossainchisty/StoryLink-Client/commit/3d6ddadffb88b2472d65972572a7aef1dae18fb8))
-
-
-
-## [0.4.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.4.0...v0.4.1) (2023-08-18)
-
-
-### Bug Fixes
-
-* Format of content ([0a89f88](https://github.com/hossainchisty/StoryLink-Client/commit/0a89f88c9bfe1122ee67f149636b7c799eb1db43))
 
 
 
