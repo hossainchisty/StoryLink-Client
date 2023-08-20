@@ -123,6 +123,7 @@ button {
   border-radius: 5px;
   padding: 7px 0;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 form.login h1,
@@ -222,4 +223,10 @@ a svg {
 
 .logout-link:hover {
   color: red;
+}
+
+.forgotten-password {
+  display: block;
+  text-align: right;
+  margin: 10px 0 5px;
 }

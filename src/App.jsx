@@ -10,6 +10,7 @@ import { UserContextProvider } from "./context/UserContext";
 import CreatePostPage from "./pages/CreatePostPage";
 import Explore from "./components/Explore";
 import Profile from "./components/Profile";
+import ForgottenPassword from "./pages/ForgottenPasswordPage";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
 
         <Route path={'/me'} element={
           <Profile />
+        } />  
+        
+        
+        <Route path={'/forgotten-password'} element={
+          <ForgottenPassword/>
         } /> 
         
         <Route path={'/explore'} element={

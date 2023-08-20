@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import { toast } from 'react-toastify';
 
@@ -54,6 +54,7 @@ export default function LoginPage() {
         onChange={event => setPassword(event.target.value)}
       />
       <button type="submit">Login</button>
+      <Link to='/forgotten-password' className="forgotten-password">Forgotten password?</Link>
     </form>
   );
 }
