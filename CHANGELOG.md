@@ -1,3 +1,12 @@
+## [0.6.2](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.1...v0.6.2) (2023-08-20)
+
+
+### Bug Fixes
+
+* logut URI in prod domain ([3863b42](https://github.com/hossainchisty/StoryLink-Client/commit/3863b42997ac4a743eea576e6ad0a808f29d15a3))
+
+
+
 ## [0.6.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.0...v0.6.1) (2023-08-18)
 
 
@@ -37,21 +46,6 @@
 ### Bug Fixes
 
 * Format of content ([0a89f88](https://github.com/hossainchisty/StoryLink-Client/commit/0a89f88c9bfe1122ee67f149636b7c799eb1db43))
-
-
-
-# [0.4.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.3.0...v0.4.0) (2023-08-17)
-
-
-### Features
-
-* Added create post function for creating a new post ([b5d1f39](https://github.com/hossainchisty/StoryLink-Client/commit/b5d1f39cdb31926012e1262a68e17c7c2597e3df))
-* Added post page for navigation to details ([09efb26](https://github.com/hossainchisty/StoryLink-Client/commit/09efb263f30225296da3f72e649e3176200aaa47))
-* Linked post draft element ([5d696fe](https://github.com/hossainchisty/StoryLink-Client/commit/5d696fed7d52e0c8b69fb874226f4ece8ec4497d))
-* Made dynamic content of post ([c66925c](https://github.com/hossainchisty/StoryLink-Client/commit/c66925cab56e37d45339f25a8d57d1c9322cdc6b))
-* Made this post component dynamic and responsive ([9c06793](https://github.com/hossainchisty/StoryLink-Client/commit/9c067939a6ecd76acdfdab68537621b14bc27987))
-* mount new route ([894f863](https://github.com/hossainchisty/StoryLink-Client/commit/894f86313d3cc51009fad78d9256a1647cf9a715))
-* Use usercontext for user info ([a9756af](https://github.com/hossainchisty/StoryLink-Client/commit/a9756af9dd9c6853c530063abc645a2c5864f942))
 
 
 
