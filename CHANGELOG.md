@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.7.0...v0.8.0) (2023-08-20)
+
+
+### Features
+
+* Added toast for better UX ([44ccf82](https://github.com/hossainchisty/StoryLink-Client/commit/44ccf8215052e068a0840bff07508e4d262c5b07))
+
+
+
 # [0.7.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.4...v0.7.0) (2023-08-20)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * logut URI in prod domain ([3863b42](https://github.com/hossainchisty/StoryLink-Client/commit/3863b42997ac4a743eea576e6ad0a808f29d15a3))
-
-
-
-## [0.6.1](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.0...v0.6.1) (2023-08-18)
-
-
-### Bug Fixes
-
-* remove prefix of main domain ([ff14a7e](https://github.com/hossainchisty/StoryLink-Client/commit/ff14a7effd680f8c3a20a3dccef93b1dfe6c57d3))
 
 
 
