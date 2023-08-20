@@ -1,3 +1,18 @@
+# [0.7.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.4...v0.7.0) (2023-08-20)
+
+
+### Bug Fixes
+
+* after logout it should redirect to login page ([709b7e4](https://github.com/hossainchisty/StoryLink-Client/commit/709b7e49582cc200b0fab8edad2d81e5aa76462e))
+
+
+### Features
+
+* Added explore options to see more article ([b44f06b](https://github.com/hossainchisty/StoryLink-Client/commit/b44f06ba5229b132e1be393bf2fb90f6ad15ca84))
+* Added profile page for author ([89fdddd](https://github.com/hossainchisty/StoryLink-Client/commit/89fdddd5403a0a59cd88ab17eee17a94e0af9179))
+
+
+
 ## [0.6.4](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.3...v0.6.4) (2023-08-20)
 
 
@@ -31,16 +46,6 @@
 ### Bug Fixes
 
 * remove prefix of main domain ([ff14a7e](https://github.com/hossainchisty/StoryLink-Client/commit/ff14a7effd680f8c3a20a3dccef93b1dfe6c57d3))
-
-
-
-# [0.6.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.5.0...v0.6.0) (2023-08-18)
-
-
-### Features
-
-* Added dynamic UI of post ([eda9ec1](https://github.com/hossainchisty/StoryLink-Client/commit/eda9ec1e5066f9021c96a6975e18d4eae72a8df8))
-* Added edit post functionality ([02f44d3](https://github.com/hossainchisty/StoryLink-Client/commit/02f44d3e018c3b6cdf769092644dee6161203eaa))
 
 
 
