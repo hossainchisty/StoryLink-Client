@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.8.0...v1.9.0) (2023-08-20)
+
+
+### Features
+
+* Added forgotten password UI ([829ad85](https://github.com/hossainchisty/StoryLink-Client/commit/829ad8589a09c920f29bd1c0c0d6d87ee539c1f5))
+
+
+
 # [0.8.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.7.0...v0.8.0) (2023-08-20)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * while registering use will navigate to login page ([e50acb1](https://github.com/hossainchisty/StoryLink-Client/commit/e50acb15ac9109631b1a5cdcbc0381acee2cc359))
-
-
-
-## [0.6.2](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.1...v0.6.2) (2023-08-20)
-
-
-### Bug Fixes
-
-* logut URI in prod domain ([3863b42](https://github.com/hossainchisty/StoryLink-Client/commit/3863b42997ac4a743eea576e6ad0a808f29d15a3))
 
 
 
