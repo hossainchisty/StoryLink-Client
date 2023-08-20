@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
+import { toast } from 'react-toastify';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -30,11 +31,10 @@ export default function LoginPage() {
         setUserInfo(userInfo);
         navigate('/'); // Use navigate to redirect to the home page
       } else {
-        alert('Wrong credentials');
+        toast.error('Wrong credentials')
       }
     } catch (error) {
-      console.error('Login error:', error);
-      alert('An error occurred while logging in');
+      toast.info('Login error')
     }
   }
 

@@ -21,7 +21,6 @@ export default function Explore() {
     <div className="explore-container">
       <div className="search-bar">
         <input type="text" placeholder={'Start typing to search'} />
-    
       </div>
       <div className="post-list">
         {dummyPosts.map(post => (

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('');
@@ -34,13 +35,16 @@ export default function RegisterPage() {
     const response = await sendRegistrationRequest();
 
     if (response.status === 201) {
+      toast.success("Congratulations, you're all set!", {
+        icon: "🚀"
+      });
       navigate('/login');
     } else {
       const alertMessage =
         response.status === 429
           ? 'Too Many Requests, please try again later'
           : 'Registration failed';
-      alert(alertMessage);
+      toast.info(alertMessage);
     }
   }
 
