@@ -20,7 +20,7 @@ export default function Header() {
   }, []);
 
   function logout() {
-    fetch('http://localhost:8000/api/v1/users/logout', {
+    fetch(`${apiBaseUrl}/users/logout`, {
       credentials: 'include',
       method: 'POST',
     });
@@ -45,7 +45,7 @@ export default function Header() {
         {userName && (
           <>
             <Link to="/draft" className='write-link'>Write</Link>
-            <a onClick={logout} className='logout-link'>Log out</a>
+            <a onClick={logout} className='logout-link'>Log out ({userName})</a>
           </>
         )}
         {!userName && (
