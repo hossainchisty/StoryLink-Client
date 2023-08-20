@@ -54,7 +54,7 @@ export default function LoginPage() {
         onChange={event => setPassword(event.target.value)}
       />
       <button type="submit">Login</button>
-      <Link to='/forgotten-password' className="forgotten-password">Forgotten password?</Link>
+      <Link to='/forgotten-password' className="form-link ">Forgotten password?</Link>
     </form>
   );
 }

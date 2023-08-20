@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
 export default function RegisterPage() {
@@ -55,6 +55,7 @@ export default function RegisterPage() {
       <input type="email" placeholder="Enter your email address" value={email} onChange={handleEmailChange} />
       <input type="password" placeholder="Enter your password" value={password} onChange={handlePasswordChange} />
       <button>Register</button>
+      <Link to='/login' className="form-link">Already have an account?</Link>
     </form>
   );
 }
