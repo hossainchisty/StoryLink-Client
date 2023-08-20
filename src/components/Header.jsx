@@ -1,10 +1,11 @@
 /* eslint-disable no-undef */
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import { useEffect, useContext } from 'react';
 import { UserContext } from '../context/UserContext';
 
 export default function Header() {
   const { setUserInfo, userInfo } = useContext(UserContext);
+  const navigate = useNavigate(); // Get the navigation function
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function Header() {
       response.json().then(userData => {
         setUserInfo(userData);
       });
-    })
+    });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -23,8 +24,10 @@ export default function Header() {
     fetch(`${apiBaseUrl}/users/logout`, {
       credentials: 'include',
       method: 'POST',
+    }).then(() => {
+      setUserInfo(null);
+      navigate('/login'); // Navigate to login page after logout
     });
-    setUserInfo(null);
   }
 
   const userName = userInfo?.full_name;
@@ -34,18 +37,18 @@ export default function Header() {
         StoryLink
       </Link>
 
-      <Link to="/" className="feed-link">
-        My Feed
-      </Link>
-
       <Link to="/explore" className="feed-link">
         Explore
       </Link>
+
       <nav>
         {userName && (
           <>
             <Link to="/draft" className='write-link'>Write</Link>
-            <a onClick={logout} className='logout-link'>Log out ({userName})</a>
+            <Link to="/me" className="profile-link">
+              Profile
+            </Link>
+            <a onClick={logout} className='logout-link'>Log out</a>
           </>
         )}
         {!userName && (
