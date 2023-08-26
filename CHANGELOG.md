@@ -1,3 +1,12 @@
+## [1.11.1](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.0...v1.11.1) (2023-08-26)
+
+
+### Bug Fixes
+
+* Added dynamic base url ([f16a698](https://github.com/hossainchisty/StoryLink-Client/commit/f16a6980fafa90150a9939b6af562186c9c7ff41))
+
+
+
 # [1.11.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.10.0...v1.11.0) (2023-08-26)
 
 
@@ -31,21 +40,6 @@
 ### Features
 
 * Added toast for better UX ([44ccf82](https://github.com/hossainchisty/StoryLink-Client/commit/44ccf8215052e068a0840bff07508e4d262c5b07))
-
-
-
-# [0.7.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.4...v0.7.0) (2023-08-20)
-
-
-### Bug Fixes
-
-* after logout it should redirect to login page ([709b7e4](https://github.com/hossainchisty/StoryLink-Client/commit/709b7e49582cc200b0fab8edad2d81e5aa76462e))
-
-
-### Features
-
-* Added explore options to see more article ([b44f06b](https://github.com/hossainchisty/StoryLink-Client/commit/b44f06ba5229b132e1be393bf2fb90f6ad15ca84))
-* Added profile page for author ([89fdddd](https://github.com/hossainchisty/StoryLink-Client/commit/89fdddd5403a0a59cd88ab17eee17a94e0af9179))
 
 
 
