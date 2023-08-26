@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.9.0...v1.10.0) (2023-08-26)
+
+
+### Features
+
+* Added pagination posts ([449022d](https://github.com/hossainchisty/StoryLink-Client/commit/449022d31266ab51772e890594725609fd524d11))
+
+
+
 # [1.9.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.8.0...v1.9.0) (2023-08-20)
 
 
@@ -37,15 +46,6 @@
 ### Performance Improvements
 
 * few improvements to enhance readability and maintainability ([d4f0163](https://github.com/hossainchisty/StoryLink-Client/commit/d4f0163f3668a1fd8e4b2394329532094fe24a4e))
-
-
-
-## [0.6.3](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.2...v0.6.3) (2023-08-20)
-
-
-### Bug Fixes
-
-* while registering use will navigate to login page ([e50acb1](https://github.com/hossainchisty/StoryLink-Client/commit/e50acb15ac9109631b1a5cdcbc0381acee2cc359))
 
 
 
