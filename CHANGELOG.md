@@ -1,3 +1,12 @@
+# [1.11.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.10.0...v1.11.0) (2023-08-26)
+
+
+### Features
+
+* Added ablity to search post by title ([c9349ee](https://github.com/hossainchisty/StoryLink-Client/commit/c9349eed570f53d1c2694afac1da182302af6f03))
+
+
+
 # [1.10.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.9.0...v1.10.0) (2023-08-26)
 
 
@@ -37,15 +46,6 @@
 
 * Added explore options to see more article ([b44f06b](https://github.com/hossainchisty/StoryLink-Client/commit/b44f06ba5229b132e1be393bf2fb90f6ad15ca84))
 * Added profile page for author ([89fdddd](https://github.com/hossainchisty/StoryLink-Client/commit/89fdddd5403a0a59cd88ab17eee17a94e0af9179))
-
-
-
-## [0.6.4](https://github.com/hossainchisty/StoryLink-Client/compare/v0.6.3...v0.6.4) (2023-08-20)
-
-
-### Performance Improvements
-
-* few improvements to enhance readability and maintainability ([d4f0163](https://github.com/hossainchisty/StoryLink-Client/commit/d4f0163f3668a1fd8e4b2394329532094fe24a4e))
 
 
 
