@@ -1,0 +1,8 @@
+.github
+.vercel
+node_modules
+.env.dev
+CHANGELOG.md
+releases.json
+vite.config.js
+README.md
