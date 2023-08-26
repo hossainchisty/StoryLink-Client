@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import { UserContextProvider } from "./context/UserContext";
 import CreatePostPage from "./pages/CreatePostPage";
+import PageNotFound from "./pages/PageNotFound";
 import Explore from "./components/Explore";
 import Profile from "./components/Profile";
 import ForgottenPassword from "./pages/ForgottenPasswordPage";
@@ -48,6 +49,10 @@ function App() {
         
         <Route path={'/edit/:id'} element={
           <EditPost/>
+        } />
+
+        <Route path={'*'} element={
+          <PageNotFound/>
         } />
       </Route>
     </Routes>

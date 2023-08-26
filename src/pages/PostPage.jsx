@@ -6,9 +6,9 @@ import { formatISO9075 } from "date-fns";
 import {UserContext} from "../context/UserContext";
 
 export default function PostPage() {
+    const { id } = useParams();
     const [postInfo, setPostInfo] = useState(null);
     const {userInfo} = useContext(UserContext);
-    const { id } = useParams();
     const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
     const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
 
@@ -20,7 +20,7 @@ export default function PostPage() {
                 });
             })
 
-    }, [id])
+    }, []) // Empty dependency array, runs only on mount
 
     if (!postInfo) return '';
     return (

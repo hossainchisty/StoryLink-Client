@@ -19,7 +19,7 @@ export default function IndexPage() {
         setTotalPages(data.data.totalPages);
       });
     });
-  }, [currentPage]);
+  }, []); // Empty dependency array, runs only on mount
 
   const handlePageChange = (selectedPage) => {
     setCurrentPage(selectedPage.selected + 1);
