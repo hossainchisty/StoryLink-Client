@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "../styles/Explore.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -6,6 +7,7 @@ export default function Explore() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResult, setSearchResult] = useState([]);
   const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   const fetchPosts = (searchTerm) => {
     if (searchTerm.trim() === "") {
@@ -13,7 +15,7 @@ export default function Explore() {
       return;
     }
 
-    fetch(`http://127.0.0.1:8000/api/v1/posts/search?title=${searchTerm}`)
+    fetch(`${apiBaseUrl}/posts/search?title=${searchTerm}`)
       .then((response) => response.json())
       .then((data) => {
         setSearchResult(data.data.posts);
