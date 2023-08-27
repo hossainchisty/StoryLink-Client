@@ -52,6 +52,7 @@ export default function RegisterPage() {
     <form className="register" onSubmit={register}>
       <h1>Register</h1>
       <input
+        autoFocus
         type="text"
         placeholder="Enter your name"
         value={fullName}
