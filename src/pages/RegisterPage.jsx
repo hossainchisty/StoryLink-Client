@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('');
@@ -44,7 +44,7 @@ export default function RegisterPage() {
         response.status === 429
           ? 'Too Many Requests, please try again later'
           : 'Registration failed';
-      toast.info(alertMessage);
+      toast.error(alertMessage);
     }
   }
 

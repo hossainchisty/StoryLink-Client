@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -34,7 +34,7 @@ export default function LoginPage() {
         toast.error('Wrong credentials')
       }
     } catch (error) {
-      toast.info('Login error')
+      toast.error('Successfully toasted!')
     }
   }
 
