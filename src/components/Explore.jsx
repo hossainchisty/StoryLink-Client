@@ -33,6 +33,7 @@ export default function Explore() {
     <div className="explore-container">
       <div className="search-bar">
         <input
+          autoFocus
           type="text"
           placeholder="Start typing to search"
           onChange={(e) => setSearchTerm(e.target.value)}
