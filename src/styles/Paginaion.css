@@ -1,7 +1,11 @@
+.loading-container,
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagination {
   margin-top: 20px;
   margin-bottom: 30px;
   list-style: none;
@@ -20,12 +24,7 @@
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.pagination a.active {
-  background-color: #7d52bd;
-  color: #fff;
-  border-color: #7d52bd;
-}
-
+.pagination a.active,
 .pagination a:hover {
   background-color: #7d52bd;
   color: #fff;
