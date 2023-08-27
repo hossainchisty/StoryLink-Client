@@ -1,42 +1,60 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-key */
 import { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import Post from "../components/Post";
-import '../styles/Paginaion.css'
+import "../styles/Paginaion.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function IndexPage() {
+  const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
-    fetch(`${apiBaseUrl}/posts/list?page=${currentPage}`).then((response) => {
-      response.json().then((data) => {
+    setLoading(true); // Start loading
+    fetch(`${apiBaseUrl}/posts/list?page=${currentPage}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
         setPosts(data.data.posts);
         setTotalPages(data.data.totalPages);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      })
+      .finally(() => {
+        setLoading(false); // Done loading
       });
-    });
-  }, []); // Empty dependency array, runs only on mount
+  }, [apiBaseUrl, currentPage]);
 
   const handlePageChange = (selectedPage) => {
     setCurrentPage(selectedPage.selected + 1);
   };
 
   return (
-    <>
-      {posts.length > 0 && posts.map((post) => <Post key={post._id} {...post} />)}
+    <div className="index-page">
+      {loading && (
+        <div className="loading-container">
+          <ClipLoader color={"rgba(106, 89, 187, 0.888)"} loading={loading} size={120} />
+        </div>
+      )}
 
-      <ReactPaginate
-        pageCount={totalPages}
-        pageRangeDisplayed={5}
-        marginPagesDisplayed={2}
-        onPageChange={handlePageChange}
-        containerClassName="pagination"
-        activeClassName="active"
-      />
-    </>
+      {!loading && (
+        <>
+          {posts.length > 0 &&
+            posts.map((post) => <Post key={post._id} {...post} />)}
+          <ReactPaginate
+            pageCount={totalPages}
+            pageRangeDisplayed={5}
+            marginPagesDisplayed={2}
+            onPageChange={handlePageChange}
+            containerClassName="pagination"
+            activeClassName="active"
+          />
+        </>
+      )}
+    </div>
   );
 }

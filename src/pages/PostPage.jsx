@@ -1,14 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState, useContext } from "react"
 import { useParams, Link } from "react-router-dom";
-
 import { formatISO9075 } from "date-fns";
 import {UserContext} from "../context/UserContext";
 
 export default function PostPage() {
     const { id } = useParams();
     const [postInfo, setPostInfo] = useState(null);
-    const {userInfo} = useContext(UserContext);
+    const { userInfo } = useContext(UserContext);
     const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
     const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
 
@@ -18,11 +17,10 @@ export default function PostPage() {
                 response.json().then(postInfo => {
                     setPostInfo(postInfo);
                 });
-            })
+            });
+    }, [apiBaseUrl, id]);
 
-    }, []) // Empty dependency array, runs only on mount
-
-    if (!postInfo) return '';
+    if (!postInfo) return null;
     return (
         <div className="post-page">
             <h1>{postInfo.data.title}</h1>
