@@ -1,3 +1,13 @@
+# [1.12.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.1...v1.12.0) (2023-08-27)
+
+
+### Features
+
+* Added react spinners package ([02684c9](https://github.com/hossainchisty/StoryLink-Client/commit/02684c9f1410821fe848862004a5364a5a83e6a0))
+* Added spinners on load ([c7dd5e6](https://github.com/hossainchisty/StoryLink-Client/commit/c7dd5e64240f525133af718877cfcf186d0e85eb))
+
+
+
 ## [1.11.1](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.0...v1.11.1) (2023-08-26)
 
 
@@ -31,15 +41,6 @@
 ### Features
 
 * Added forgotten password UI ([829ad85](https://github.com/hossainchisty/StoryLink-Client/commit/829ad8589a09c920f29bd1c0c0d6d87ee539c1f5))
-
-
-
-# [0.8.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.7.0...v0.8.0) (2023-08-20)
-
-
-### Features
-
-* Added toast for better UX ([44ccf82](https://github.com/hossainchisty/StoryLink-Client/commit/44ccf8215052e068a0840bff07508e4d262c5b07))
 
 
 
