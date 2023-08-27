@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.12.0...v1.13.0) (2023-08-27)
+
+
+### Features
+
+* Added autofocus and hot toast ([64c7047](https://github.com/hossainchisty/StoryLink-Client/commit/64c70470fa575592e4cc82d19a4365c0b02d6049))
+
+
+
 # [1.12.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.1...v1.12.0) (2023-08-27)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * Added pagination posts ([449022d](https://github.com/hossainchisty/StoryLink-Client/commit/449022d31266ab51772e890594725609fd524d11))
-
-
-
-# [1.9.0](https://github.com/hossainchisty/StoryLink-Client/compare/v0.8.0...v1.9.0) (2023-08-20)
-
-
-### Features
-
-* Added forgotten password UI ([829ad85](https://github.com/hossainchisty/StoryLink-Client/commit/829ad8589a09c920f29bd1c0c0d6d87ee539c1f5))
 
 
 
