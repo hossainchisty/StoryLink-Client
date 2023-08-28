@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Editor from "../components/Editor";
+import toast from "react-hot-toast";
+
 
 
 export default function CreatePostPage() {
@@ -23,6 +25,9 @@ export default function CreatePostPage() {
       credentials: 'include',
     })
     if (response.status === 201) {
+      toast.success("Your content has been successfully shared.", {
+        icon: "🚀",
+      });
       setRedirect(true);
     }
   }

@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Editor from "../components/Editor";
+import toast from "react-hot-toast";
+
 
 export default function EditPost() {
   const { id } = useParams();
@@ -35,6 +37,9 @@ export default function EditPost() {
       method: "PUT",
       body: data,
       credentials: "include",
+    });
+    toast.success("Your content has been successfully updated.", {
+      icon: "👏",
     });
     setRedirect(true);
   }
