@@ -47,8 +47,8 @@ export default function IndexPage() {
             posts.map((post) => <Post key={post._id} {...post} />)}
           <ReactPaginate
             pageCount={totalPages}
-            pageRangeDisplayed={5}
-            marginPagesDisplayed={2}
+            pageRangeDisplayed={3}
+            marginPagesDisplayed={5}
             onPageChange={handlePageChange}
             containerClassName="pagination"
             activeClassName="active"

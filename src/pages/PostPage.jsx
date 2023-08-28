@@ -4,6 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { formatISO9075 } from "date-fns";
 import {UserContext} from "../context/UserContext";
 
+
 export default function PostPage() {
     const { id } = useParams();
     const [postInfo, setPostInfo] = useState(null);
@@ -31,6 +32,7 @@ export default function PostPage() {
             <div className="author">by @{postInfo.data.author.full_name}</div>
             
             <div className="content" dangerouslySetInnerHTML={{ __html: postInfo.data.content }} />
+
             {userInfo.id === postInfo.data.author._id && (
                 <div className="edit-row">
                     <Link className="edit-btn" to={`/edit/${postInfo.data._id}`}>
