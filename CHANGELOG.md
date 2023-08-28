@@ -1,3 +1,12 @@
+# [1.15.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.14.0...v1.15.0) (2023-08-28)
+
+
+### Features
+
+* integrate most recent article API ([b72b727](https://github.com/hossainchisty/StoryLink-Client/commit/b72b72756f5ab8794ac91f0e12be3779c0dd71a5))
+
+
+
 # [1.14.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.13.0...v1.14.0) (2023-08-27)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * Added dynamic base url ([f16a698](https://github.com/hossainchisty/StoryLink-Client/commit/f16a6980fafa90150a9939b6af562186c9c7ff41))
-
-
-
-# [1.11.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.10.0...v1.11.0) (2023-08-26)
-
-
-### Features
-
-* Added ablity to search post by title ([c9349ee](https://github.com/hossainchisty/StoryLink-Client/commit/c9349eed570f53d1c2694afac1da182302af6f03))
 
 
 
