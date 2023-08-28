@@ -1,36 +1,34 @@
 import '../styles/Profile.css';
-import { useEffect, useContext } from 'react';
+import { useEffect, useContext, useState } from 'react';
 import { UserContext } from '../context/UserContext';
-
-const dummyPosts = [
-    {
-        id: 1,
-        title: 'First Post',
-        content: 'This is the content of the first post.',
-    },
-    {
-        id: 2,
-        title: 'Second Post',
-        content: 'This is the content of the second post.',
-    },
-    // Add more dummy posts as needed
-];
-
 
 export default function Profile() {
     const { setUserInfo, userInfo } = useContext(UserContext);
+    const [recentPosts, setRecentPosts] = useState([])
     const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
-
+    const apiBaseDomain = import.meta.env.VITE_API_DOMAIN;
+    console.log(recentPosts);
     useEffect(() => {
-      fetch(`${apiBaseUrl}/users/me`, {
-        credentials: 'include',
-      }).then(response => {
-        response.json().then(userData => {
-          setUserInfo(userData);
+        fetch(`${apiBaseUrl}/users/me`, {
+            credentials: 'include',
+        }).then(response => {
+            response.json().then(userData => {
+                console.log(userData.userInfo);
+                setUserInfo(userData);
+            });
+        })
+
+        // Fetch recent posts here
+        fetch(`${apiBaseUrl}/posts/me/recent`, {
+            credentials: 'include',
+        }).then(response => {
+            response.json().then(postsData => {
+                console.log(postsData);
+                setRecentPosts(postsData.data.mostRecentPosts);
+            });
         });
-      })
-  
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <div className="profile-container">
@@ -55,13 +53,10 @@ export default function Profile() {
                 <div className="post-listing">
                     <h2>Recent Activity</h2>
                     <div className="post-list">
-                        {dummyPosts.map(post => (
+                        {recentPosts.map(post => (
                             <div key={post.id} className="post-item">
-
-                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1690175267986/da3e5ed2-6240-41b5-8a53-dcf1ac2bc541.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="Post Image" />
-
+                                <img src={`${apiBaseDomain}/${post.cover}`} alt={post.title} />
                                 <h3>{post.title}</h3>
-                                <p>{post.content}</p>
                             </div>
                         ))}
                     </div>
