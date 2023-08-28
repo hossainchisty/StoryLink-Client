@@ -1,3 +1,12 @@
+# [1.16.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.15.0...v1.16.0) (2023-08-28)
+
+
+### Features
+
+* Added toast for better UX ([73b5fe1](https://github.com/hossainchisty/StoryLink-Client/commit/73b5fe1ca2e7460b81c3a7e06b5a7102352ea45d))
+
+
+
 # [1.15.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.14.0...v1.15.0) (2023-08-28)
 
 
@@ -32,15 +41,6 @@
 
 * Added react spinners package ([02684c9](https://github.com/hossainchisty/StoryLink-Client/commit/02684c9f1410821fe848862004a5364a5a83e6a0))
 * Added spinners on load ([c7dd5e6](https://github.com/hossainchisty/StoryLink-Client/commit/c7dd5e64240f525133af718877cfcf186d0e85eb))
-
-
-
-## [1.11.1](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.0...v1.11.1) (2023-08-26)
-
-
-### Bug Fixes
-
-* Added dynamic base url ([f16a698](https://github.com/hossainchisty/StoryLink-Client/commit/f16a6980fafa90150a9939b6af562186c9c7ff41))
 
 
 
