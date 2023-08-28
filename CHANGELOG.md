@@ -1,3 +1,12 @@
+# [1.14.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.13.0...v1.14.0) (2023-08-27)
+
+
+### Features
+
+* Added autofocus on search article ([69d1eb3](https://github.com/hossainchisty/StoryLink-Client/commit/69d1eb38860002880d42337040be8549c6b0123b))
+
+
+
 # [1.13.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.12.0...v1.13.0) (2023-08-27)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * Added ablity to search post by title ([c9349ee](https://github.com/hossainchisty/StoryLink-Client/commit/c9349eed570f53d1c2694afac1da182302af6f03))
-
-
-
-# [1.10.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.9.0...v1.10.0) (2023-08-26)
-
-
-### Features
-
-* Added pagination posts ([449022d](https://github.com/hossainchisty/StoryLink-Client/commit/449022d31266ab51772e890594725609fd524d11))
 
 
 
