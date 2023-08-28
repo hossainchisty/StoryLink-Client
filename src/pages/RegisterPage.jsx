@@ -34,17 +34,29 @@ export default function RegisterPage() {
 
     const response = await sendRegistrationRequest();
 
+    const icons = {
+      201: "🚀",
+      409: "⛔",
+      429: "⚠️",
+    };
+
     if (response.status === 201) {
       toast.success("Congratulations, you're all set!", {
-        icon: "🚀",
+        icon: icons[response.status],
       });
       navigate("/login");
+    } else if (response.status === 409) {
+      toast.error("The email address you entered is already associated with an account.", {
+        icon: icons[response.status],
+      });
+    } else if (response.status === 429) {
+      toast.error("Too Many Requests, please try again later", {
+        icon: icons[response.status],
+      });
     } else {
-      const alertMessage =
-        response.status === 429
-          ? "Too Many Requests, please try again later"
-          : "Registration failed";
-      toast.error(alertMessage);
+      toast.error("Registration failed", {
+        icon: "💥",
+      });
     }
   }
 

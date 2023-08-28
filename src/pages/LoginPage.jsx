@@ -27,7 +27,7 @@ export default function LoginPage() {
         setUserInfo(userInfo);
         navigate("/"); // Redirect to the home page
       } else {
-        toast.error("Wrong credentials");
+        toast.info("The email or password you entered is incorrect.");
       }
     } catch (error) {
       toast.error("An error occurred while logging in.");
