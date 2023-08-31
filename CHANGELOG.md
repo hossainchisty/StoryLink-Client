@@ -1,3 +1,12 @@
+# [1.17.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.16.0...v1.17.0) (2023-08-31)
+
+
+### Features
+
+* Added email verification for storylink ([d0a6a7a](https://github.com/hossainchisty/StoryLink-Client/commit/d0a6a7a0a8ea89279cc61fbd5a2e47a8e57f544e))
+
+
+
 # [1.16.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.15.0...v1.16.0) (2023-08-28)
 
 
@@ -31,16 +40,6 @@
 ### Features
 
 * Added autofocus and hot toast ([64c7047](https://github.com/hossainchisty/StoryLink-Client/commit/64c70470fa575592e4cc82d19a4365c0b02d6049))
-
-
-
-# [1.12.0](https://github.com/hossainchisty/StoryLink-Client/compare/v1.11.1...v1.12.0) (2023-08-27)
-
-
-### Features
-
-* Added react spinners package ([02684c9](https://github.com/hossainchisty/StoryLink-Client/commit/02684c9f1410821fe848862004a5364a5a83e6a0))
-* Added spinners on load ([c7dd5e6](https://github.com/hossainchisty/StoryLink-Client/commit/c7dd5e64240f525133af718877cfcf186d0e85eb))
 
 
 
