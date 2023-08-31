@@ -26,8 +26,11 @@ export default function LoginPage() {
         const userInfo = await response.json();
         setUserInfo(userInfo);
         navigate("/"); // Redirect to the home page
+      } else if (response.status === 403) {
+        toast.error("You're not verified, please verify your email address."); 
+        navigate("/verify"); // Redirect to verification page
       } else {
-        toast.info("The email or password you entered is incorrect.");
+        toast.error("The email or password you entered is incorrect.");
       }
     } catch (error) {
       toast.error("An error occurred while logging in.");

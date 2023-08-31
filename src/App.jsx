@@ -12,6 +12,9 @@ import PageNotFound from "./pages/PageNotFound";
 import Explore from "./components/Explore";
 import Profile from "./components/Profile";
 import ForgottenPassword from "./pages/ForgottenPasswordPage";
+import VerifiyPage from "./pages/VerifiyPage";
+import PendingPage from "./pages/PendingPage";
+import VerifyNowPage from "./pages/VerifyNowPage";
 
 function App() {
   return (
@@ -50,6 +53,17 @@ function App() {
         <Route path={'/edit/:id'} element={
           <EditPost/>
         } />
+        
+        <Route path={'/verify/:token'} element={
+          <VerifiyPage/>
+        } />
+        
+        <Route path={'/verify'} element={
+          <PendingPage/>
+        } />
+          <Route path={'/verification'} element={
+                    <VerifyNowPage/>
+                  } />
 
         <Route path={'*'} element={
           <PageNotFound/>

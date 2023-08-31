@@ -35,16 +35,12 @@ export default function RegisterPage() {
     const response = await sendRegistrationRequest();
 
     const icons = {
-      201: "🚀",
       409: "⛔",
       429: "⚠️",
     };
 
     if (response.status === 201) {
-      toast.success("Congratulations, you're all set!", {
-        icon: icons[response.status],
-      });
-      navigate("/login");
+      navigate("/verification");
     } else if (response.status === 409) {
       toast.error("The email address you entered is already associated with an account.", {
         icon: icons[response.status],
